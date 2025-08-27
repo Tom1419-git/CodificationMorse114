@@ -1,0 +1,15 @@
+D:\Trimestre1\114\CodificationMorse114\CodificationMorseCode\CodificationMorseCode\bin\Debug\net6.0\CodificationMorseCode.exe
+D:\Trimestre1\114\CodificationMorse114\CodificationMorseCode\CodificationMorseCode\bin\Debug\net6.0\CodificationMorseCode.deps.json
+D:\Trimestre1\114\CodificationMorse114\CodificationMorseCode\CodificationMorseCode\bin\Debug\net6.0\CodificationMorseCode.runtimeconfig.json
+D:\Trimestre1\114\CodificationMorse114\CodificationMorseCode\CodificationMorseCode\bin\Debug\net6.0\CodificationMorseCode.dll
+D:\Trimestre1\114\CodificationMorse114\CodificationMorseCode\CodificationMorseCode\bin\Debug\net6.0\CodificationMorseCode.pdb
+D:\Trimestre1\114\CodificationMorse114\CodificationMorseCode\CodificationMorseCode\obj\Debug\net6.0\CodificationMorseCode.csproj.AssemblyReference.cache
+D:\Trimestre1\114\CodificationMorse114\CodificationMorseCode\CodificationMorseCode\obj\Debug\net6.0\CodificationMorseCode.GeneratedMSBuildEditorConfig.editorconfig
+D:\Trimestre1\114\CodificationMorse114\CodificationMorseCode\CodificationMorseCode\obj\Debug\net6.0\CodificationMorseCode.AssemblyInfoInputs.cache
+D:\Trimestre1\114\CodificationMorse114\CodificationMorseCode\CodificationMorseCode\obj\Debug\net6.0\CodificationMorseCode.AssemblyInfo.cs
+D:\Trimestre1\114\CodificationMorse114\CodificationMorseCode\CodificationMorseCode\obj\Debug\net6.0\CodificationMorseCode.csproj.CoreCompileInputs.cache
+D:\Trimestre1\114\CodificationMorse114\CodificationMorseCode\CodificationMorseCode\obj\Debug\net6.0\CodificationMorseCode.dll
+D:\Trimestre1\114\CodificationMorse114\CodificationMorseCode\CodificationMorseCode\obj\Debug\net6.0\refint\CodificationMorseCode.dll
+D:\Trimestre1\114\CodificationMorse114\CodificationMorseCode\CodificationMorseCode\obj\Debug\net6.0\CodificationMorseCode.pdb
+D:\Trimestre1\114\CodificationMorse114\CodificationMorseCode\CodificationMorseCode\obj\Debug\net6.0\CodificationMorseCode.genruntimeconfig.cache
+D:\Trimestre1\114\CodificationMorse114\CodificationMorseCode\CodificationMorseCode\obj\Debug\net6.0\ref\CodificationMorseCode.dll
