@@ -9,6 +9,19 @@ namespace CodificationMorseCode
 {
     internal class Program
     {
+        // Table de correspondance lettre → Morse (uniquement A-Z selon CDC)
+        private static Dictionary<char, string> tableMorse = new Dictionary<char, string>()
+        {
+            {'A', ".-"},   {'B', "-..."}, {'C', "-.-."},
+            {'D', "-.."},  {'E', "."},    {'F', "..-."},
+            {'G', "--."},  {'H', "...."}, {'I', ".."},
+            {'J', ".---"}, {'K', "-.-"},  {'L', ".-.."},
+            {'M', "--"},   {'N', "-."},   {'O', "---"},
+            {'P', ".--."}, {'Q', "--.-"}, {'R', ".-."},
+            {'S', "..."},  {'T', "-"},    {'U', "..-"},
+            {'V', "...-"}, {'W', ".--"},  {'X', "-..-"},
+            {'Y', "-.--"}, {'Z', "--.."}
+        };
         static void Main(string[] args)
         {
             AfficherTitreASCII();
@@ -36,7 +49,7 @@ namespace CodificationMorseCode
             Console.WriteLine();
             Console.ResetColor();
 
-           
+
         }
     }
 }
