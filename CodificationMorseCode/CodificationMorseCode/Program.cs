@@ -21,15 +21,18 @@ namespace CodificationMorseCode
             {'P', ".--."}, {'Q', "--.-"}, {'R', ".-."},
             {'S', "..."},  {'T', "-"},    {'U', "..-"},
             {'V', "...-"}, {'W', ".--"},  {'X', "-..-"},
-            {'Y', "-.--"}, {'Z', "--.."}, {' ', "/"}
-
+            {'Y', "-.--"}, {'Z', "--.."}, {' ', "/"},
+            {'0', "-----"},{'1', ".----"},{'2', "..---"},
+            {'3', "...--"},{'4', "....-"},{'5', "....."},
+            {'6', "-...."},{'7', "--..."},{'8', "---.."},
+            {'9', "----."}
         };
 
         static void Main()
         {
             AfficherTitreASCII();
 
-            Console.Write("Entrez un mot ou une phrase (A-Z, sans accents) : ");
+            Console.Write("Entrez un mot ou une phrase (A-Z,0-9 sans accents) : ");
             string input = Console.ReadLine()!.ToUpper();
 
             string result = ConvertToMorse(input);
