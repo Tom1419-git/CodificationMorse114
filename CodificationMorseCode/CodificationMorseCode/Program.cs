@@ -7,6 +7,7 @@ Last modified : 01.09.2025
 using System;
 using System.Collections.Generic;
 using System.Threading;
+using System.IO; 
 
 namespace CodificationMorseCode
 {
@@ -36,15 +37,17 @@ namespace CodificationMorseCode
             Console.Write("Entrez un mot ou une phrase (A-Z,0-9 sans accents) : ");
             string input = Console.ReadLine()!.ToUpper();
 
-
             string result = ConvertToMorse(input);
 
             Console.WriteLine("\nRésultat en Morse :");
             Console.WriteLine(result);
 
+            // Sauvegarde dans un fichier texte
+            SaveMorseToFile(result, "morse_output.txt");
+            Console.WriteLine("\n✅ Résultat sauvegardé dans 'morse_output.txt'");
+
             // jouer les sons associés
             PlayMorseSound(result);
-
 
             Console.WriteLine("\nAppuyez sur une touche pour recommencer...");
             Console.ReadKey();
@@ -68,6 +71,18 @@ namespace CodificationMorseCode
             }
 
             return string.Join(" ", morseResult);
+        }
+
+        private static void SaveMorseToFile(string text, string filename)
+        {
+            try
+            {
+                File.WriteAllText(filename, text);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur lors de l'enregistrement du fichier : " + ex.Message);
+            }
         }
 
         private static void PlayMorseSound(string morse)
