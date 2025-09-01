@@ -4,10 +4,6 @@ Thomas Mayoraz
 Created: 27.08.2025
 Last modified : 01.09.2025
 */
-using System;
-using System.Collections.Generic;
-using System.Threading;
-using System.IO; 
 
 namespace CodificationMorseCode
 {
@@ -44,7 +40,7 @@ namespace CodificationMorseCode
 
             // Sauvegarde dans un fichier texte
             SaveMorseToFile(result, "morse_output.txt");
-            Console.WriteLine("\n✅ Résultat sauvegardé dans 'morse_output.txt'");
+            Console.WriteLine("\n Résultat sauvegardé dans 'morse_output.txt'");
 
             // jouer les sons associés
             PlayMorseSound(result);
@@ -101,7 +97,7 @@ namespace CodificationMorseCode
                 }
                 else if (c == ' ')
                 {
-                    Thread.Sleep(300); // pause entre lettres
+                    Thread.Sleep(200); // pause entre lettres
                 }
                 else if (c == '/')
                 {
@@ -114,18 +110,18 @@ namespace CodificationMorseCode
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine();
-            Console.WriteLine("\t\t\t╔══════════════════════════════════════════════════════════════════════════════════════╗");
-            Console.WriteLine("\t\t\t║  ███╗   ███╗ ██████╗ ██████╗ ███████╗███████╗    ██████╗ ██████╗ ██████╗ ███████╗    ║");
-            Console.WriteLine("\t\t\t║  ████╗ ████║██╔═══██╗██╔══██╗██╔════╝██╔════╝   ██╔════╝██╔═══██╗██╔══██╗██╔════╝    ║");
-            Console.WriteLine("\t\t\t║  ██╔████╔██║██║   ██║██████╔╝███████╗█████╗     ██║     ██║   ██║██║  ██║█████╗      ║");
-            Console.WriteLine("\t\t\t║  ██║╚██╔╝██║██║   ██║██╔══██╗╚════██║██╔══╝     ██║     ██║   ██║██║  ██║██╔══╝      ║");
-            Console.WriteLine("\t\t\t║  ██║ ╚═╝ ██║╚██████╔╝██║  ██║███████║███████╗   ╚██████╗╚██████╔╝██████╔╝███████╗    ║");
-            Console.WriteLine("\t\t\t║  ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝    ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝    ║");
-            Console.WriteLine("\t\t\t║                                                                                      ║");
-            Console.WriteLine("\t\t\t║                            CRÉÉ PAR : Thomas MAYORAZ (MIN2B)                         ║");
-            Console.WriteLine("\t\t\t║                                  PROJET : C114 - 2025                                ║");
-            Console.WriteLine("\t\t\t║                                                                                      ║");
-            Console.WriteLine("\t\t\t╚══════════════════════════════════════════════════════════════════════════════════════╝");
+            Console.WriteLine("\t\t╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════╗");
+            Console.WriteLine("\t\t║  ██████╗ ██████╗ ██╗   ██╗████████╗███████╗ █████╗ ██╗   ██╗    ███████╗██╗   ██╗██╗███████╗███████╗███████╗  ║");
+            Console.WriteLine("\t\t║ ██╔════╝██╔═══██╗██║   ██║╚══██╔══╝██╔════╝██╔══██╗██║   ██║    ██╔════╝██║   ██║██║██╔════╝██╔════╝██╔════╝  ║");
+            Console.WriteLine("\t\t║ ██║     ██║   ██║██║   ██║   ██║   █████╗  ███████║██║   ██║    ███████╗██║   ██║██║███████╗███████╗█████╗    ║");
+            Console.WriteLine("\t\t║ ██║     ██║   ██║██║   ██║   ██║   ██╔══╝  ██╔══██║██║   ██║    ╚════██║██║   ██║██║╚════██║╚════██║██╔══╝    ║");
+            Console.WriteLine("\t\t║ ╚██████╗╚██████╔╝╚██████╔╝   ██║   ███████╗██║  ██║╚██████╔╝    ███████║╚██████╔╝██║███████║███████║███████╗  ║");
+            Console.WriteLine("\t\t║  ╚═════╝ ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝╚═╝  ╚═╝ ╚═════╝     ╚══════╝ ╚═════╝ ╚═╝╚══════╝╚══════╝╚══════╝  ║");
+            Console.WriteLine("\t\t║                                                                                                               ║");
+            Console.WriteLine("\t\t║                                         CRÉÉ PAR : Thomas MAYORAZ (MIN2B)                                     ║");
+            Console.WriteLine("\t\t║                                              PROJET : C114 - 2025                                             ║");
+            Console.WriteLine("\t\t║                                                                                                               ║");
+            Console.WriteLine("\t\t╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════╝");
             Console.WriteLine();
             Console.ResetColor();
         }
