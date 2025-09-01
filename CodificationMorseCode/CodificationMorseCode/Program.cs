@@ -2,7 +2,7 @@
 ETML
 Thomas Mayoraz
 Created: 27.08.2025
-Last modified : 27.08.2025
+Last modified : 01.09.2025
 */
 using System;
 using System.Collections.Generic;
@@ -21,7 +21,7 @@ namespace CodificationMorseCode
             {'P', ".--."}, {'Q', "--.-"}, {'R', ".-."},
             {'S', "..."},  {'T', "-"},    {'U', "..-"},
             {'V', "...-"}, {'W', ".--"},  {'X', "-..-"},
-            {'Y', "-.--"}, {'Z', "--.."},{' ', "/"}
+            {'Y', "-.--"}, {'Z', "--.."}, {' ', "/"}
 
         };
 
@@ -46,11 +46,16 @@ namespace CodificationMorseCode
         private static string ConvertToMorse(string input)
         {
             List<string> morseResult = new();
+            int i =1;
 
             foreach (char c in input)
             {
                 if (MorseTable.ContainsKey(c))
                     morseResult.Add(MorseTable[c]);
+                else 
+                    Console.Write("|Caractère erroné à la position " + i  , "|");
+                    
+                i++;
             }
 
             return string.Join(" ", morseResult);
