@@ -1,16 +1,17 @@
 ﻿/*
- ETML
- Thomas Mayoraz
- Created: 27.08.2025
- Last modified : 27.08.2025
- */
+ETML
+Thomas Mayoraz
+Created: 27.08.2025
+Last modified : 27.08.2025
+*/
+using System;
+using System.Collections.Generic;
 
 namespace CodificationMorseCode
 {
     internal class Program
     {
-        // Table de correspondance lettre → Morse (uniquement A-Z selon CDC)
-        private static Dictionary<char, string> tableMorse = new Dictionary<char, string>()
+        private static Dictionary<char, string> MorseTable = new()
         {
             {'A', ".-"},   {'B', "-..."}, {'C', "-.-."},
             {'D', "-.."},  {'E', "."},    {'F', "..-."},
@@ -20,20 +21,45 @@ namespace CodificationMorseCode
             {'P', ".--."}, {'Q', "--.-"}, {'R', ".-."},
             {'S', "..."},  {'T', "-"},    {'U', "..-"},
             {'V', "...-"}, {'W', ".--"},  {'X', "-..-"},
-            {'Y', "-.--"}, {'Z', "--.."}
+            {'Y', "-.--"}, {'Z', "--.."},{' ', "/"}
+
         };
-        static void Main(string[] args)
+
+        static void Main()
         {
             AfficherTitreASCII();
 
+            Console.Write("Entrez un mot ou une phrase (A-Z, sans accents) : ");
+            string input = Console.ReadLine()!.ToUpper();
+
+            string result = ConvertToMorse(input);
+
+            Console.WriteLine("\nRésultat en Morse :");
+            Console.WriteLine(result);
+
+            Console.WriteLine("\nAppuyez sur une touche pour recommencer...");
+            Console.ReadKey();
+            Console.Clear();
+            Main();
         }
-        /// <summary>
-        /// Affiche le titre ASCII art du programme
-        /// </summary>
+
+        private static string ConvertToMorse(string input)
+        {
+            List<string> morseResult = new();
+
+            foreach (char c in input)
+            {
+                if (MorseTable.ContainsKey(c))
+                    morseResult.Add(MorseTable[c]);
+            }
+
+            return string.Join(" ", morseResult);
+        }
+
         private static void AfficherTitreASCII()
         {
-            Console.WriteLine("");
             Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine();
             Console.WriteLine("\t\t\t╔══════════════════════════════════════════════════════════════════════════════════════╗");
             Console.WriteLine("\t\t\t║  ███╗   ███╗ ██████╗ ██████╗ ███████╗███████╗    ██████╗ ██████╗ ██████╗ ███████╗    ║");
             Console.WriteLine("\t\t\t║  ████╗ ████║██╔═══██╗██╔══██╗██╔════╝██╔════╝   ██╔════╝██╔═══██╗██╔══██╗██╔════╝    ║");
@@ -48,8 +74,6 @@ namespace CodificationMorseCode
             Console.WriteLine("\t\t\t╚══════════════════════════════════════════════════════════════════════════════════════╝");
             Console.WriteLine();
             Console.ResetColor();
-
-
         }
     }
 }
