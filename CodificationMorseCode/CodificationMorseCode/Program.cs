@@ -6,6 +6,7 @@ Last modified : 01.09.2025
 */
 using System;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace CodificationMorseCode
 {
@@ -35,10 +36,15 @@ namespace CodificationMorseCode
             Console.Write("Entrez un mot ou une phrase (A-Z,0-9 sans accents) : ");
             string input = Console.ReadLine()!.ToUpper();
 
+
             string result = ConvertToMorse(input);
 
             Console.WriteLine("\nRésultat en Morse :");
             Console.WriteLine(result);
+
+            // jouer les sons associés
+            PlayMorseSound(result);
+
 
             Console.WriteLine("\nAppuyez sur une touche pour recommencer...");
             Console.ReadKey();
@@ -49,19 +55,44 @@ namespace CodificationMorseCode
         private static string ConvertToMorse(string input)
         {
             List<string> morseResult = new();
-            int i =1;
+            int i = 1;
 
             foreach (char c in input)
             {
                 if (MorseTable.ContainsKey(c))
                     morseResult.Add(MorseTable[c]);
-                else 
-                    Console.Write("|Caractère erroné à la position " + i  , "|");
-                    
+                else
+                    Console.Write("|Caractère erroné à la position " + i, "|");
+
                 i++;
             }
 
             return string.Join(" ", morseResult);
+        }
+
+        private static void PlayMorseSound(string morse)
+        {
+            foreach (char c in morse)
+            {
+                if (c == '.')
+                {
+                    // point → bip long
+                    Console.Beep(800, 200);
+                }
+                else if (c == '-')
+                {
+                    // tiret → bip court
+                    Console.Beep(800, 100);
+                }
+                else if (c == ' ')
+                {
+                    Thread.Sleep(300); // pause entre lettres
+                }
+                else if (c == '/')
+                {
+                    Thread.Sleep(700); // pause entre mots
+                }
+            }
         }
 
         private static void AfficherTitreASCII()
