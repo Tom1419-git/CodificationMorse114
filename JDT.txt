@@ -1,15 +1,20 @@
---------------- 2 périodes  27.08.2025
-création du titre 1 p
-création du dictionnaire 1 p
+================= JOURNAL DE TRAVAIL =================
+
+--------------- 27.08.2025 | 2 périodes
+- Création du titre ...................... 1 p
+- Création du dictionnaire ............... 1 p
 =======================================
 
---------------- 3 périodes 01.09.2025
-gestion caractères érronés 1p
-gestion des chiffres + sauvegarde dans un fichier externe 1p
-bip lors de la lecture 1p
-======================================
+--------------- 01.09.2025 | 3 périodes
+- Gestion des caractères erronés ......... 1 p
+- Gestion des chiffres + sauvegarde
+  dans un fichier externe ................ 1 p
+- Bip lors de la lecture ................. 1 p
+=======================================
 
---------------- 3 périodes 08.09.2025
-
-
-
+--------------- 08.09.2025 | 3 périodes
+- Création du JDT amélioré ............... 0.5 p
+- Gestion de Décimal <> Binaire .......... 0.5 p
+- Créations des converstions 
+  Décimal <> Octal et Binaire <> Octal ... 2 p
+=======================================
