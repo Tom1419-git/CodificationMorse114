@@ -1,3 +1,15 @@
-2 périodes  27.08.2025
+--------------- 2 périodes  27.08.2025
 création du titre 1 p
 création du dictionnaire 1 p
+=======================================
+
+--------------- 3 périodes 01.09.2025
+gestion caractères érronés 1p
+gestion des chiffres + sauvegarde dans un fichier externe 1p
+bip lors de la lecture 1p
+======================================
+
+--------------- 3 périodes 08.09.2025
+
+
+
