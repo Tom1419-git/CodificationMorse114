@@ -18,3 +18,8 @@
 - Créations des converstions 
   Décimal <> Octal et Binaire <> Octal ... 2 p
 =======================================
+
+--------------- 29.09.2025 | 3 périodes
+- Documentation sur la stéganographie .... 1 p
+- Ecriture du code stéganographique ........ 2 p 
+=======================================
