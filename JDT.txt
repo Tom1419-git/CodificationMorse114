@@ -21,5 +21,11 @@
 
 --------------- 29.09.2025 | 3 périodes
 - Documentation sur la stéganographie .... 1 p
-- Ecriture du code stéganographique ........ 2 p 
+- Ecriture du code stéganographique ...... 2 p 
+=======================================
+
+--------------- 06.10.2025 | 3 périodes
+- Fin code stégano ....................... 1 p
+- Avancée sur le projet 129 car j'ai fini
+  cette partie ........................... 2 p
 =======================================
