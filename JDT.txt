@@ -29,3 +29,9 @@
 - Avancée sur le projet 129 car j'ai fini
   cette partie stégano ................... 2 p
 =======================================
+
+--------------- 27.10.2025 | 3 périodes
+- Relecture du code en entier pour vérifier 
+  si tout est ok   ....................... 1 p
+- Ecriture du ReadMe ..................... 2 p
+=======================================
